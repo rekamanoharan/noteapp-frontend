@@ -67,13 +67,6 @@ export default function LoginPage(){
               <Input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" />
             </FormControl>
             <Stack spacing={10}>
-              <Stack
-                direction={{ base: 'column', sm: 'row' }}
-                align={'start'}
-                justify={'space-between'}>
-                <Checkbox>Remember me</Checkbox>
-                <Link color={'blue.400'}>Forgot password?</Link>
-              </Stack>
               <Button
               onClick={handleLogin}
                 bg={'blue.400'}
@@ -81,7 +74,7 @@ export default function LoginPage(){
                 _hover={{
                   bg: 'blue.500',
                 }}>
-                Sign in
+                Log in
               </Button>
             </Stack>
           </Stack>
